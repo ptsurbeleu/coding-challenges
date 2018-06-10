@@ -2,7 +2,7 @@
 
 /*:
  
- Find 100% human-friendly excursion into this coding challenge at http://pabloduo.com/2018/05/23/insert-bits-into-a-number.
+ Find 100% human-friendly explanation into this coding challenge at http://pabloduo.com/2018/05/23/insert-bits-into-a-number.
  
  
  You are given two 32-bit numbers, n and m, and two bit positions, i and j. 
