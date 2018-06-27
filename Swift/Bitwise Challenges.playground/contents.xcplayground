@@ -4,5 +4,6 @@
         <page name='Insert M Into N Given Two Positions I and J'/>
         <page name='Binary Representation of a Real Number'/>
         <page name='Next Smallest Number Of Same Weight'/>
+        <page name='Next Largest Number Of Same Weight'/>
     </pages>
 </playground>
