@@ -7,5 +7,6 @@
         <page name='Next Largest Number Of Same Weight'/>
         <page name='What Kind Of Mystery It Is?'/>
         <page name='Number Of Bits To Convert Between A and B'/>
+        <page name='Swap Odd and Even Bits of Number'/>
     </pages>
 </playground>
