@@ -9,5 +9,6 @@
         <page name='Number Of Bits To Convert Between A and B'/>
         <page name='Swap Odd and Even Bits of Number'/>
         <page name='Find Missing Number'/>
+        <page name='Compute Sum Using Bitwise Operators'/>
     </pages>
 </playground>
