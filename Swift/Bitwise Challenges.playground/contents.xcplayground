@@ -10,5 +10,6 @@
         <page name='Swap Odd and Even Bits of Number'/>
         <page name='Find Missing Number'/>
         <page name='Compute Sum Using Bitwise Operators'/>
+        <page name='Compute X * Y Using Bitwise Operators'/>
     </pages>
 </playground>

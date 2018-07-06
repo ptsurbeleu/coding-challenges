@@ -28,3 +28,27 @@ public func bitoff(_ num: Int, _ i: Int) -> Bool {
 public func biton(_ num: Int, _ i: Int) -> Bool {
     return bit(num, i) == 1
 }
+
+/// Logical bit shift operator declaration.
+infix operator >>>: BitwiseShiftPrecedence
+
+/// Logical bit shift operator implementation.
+///
+/// - Parameter x: An integer to apply logical bitwise right shift operator to.
+/// - Parameter y: A number of bits to shift to the right.
+public func >>>(x: Int, y: Int) -> Int {
+    // Convert both signed numbers into unsigned ones and shift bits
+    let bits = UInt(bitPattern: x) >> UInt(bitPattern: y)
+    // Translate resulting bits into a signed integer
+    return Int(bitPattern: bits)
+}
+
+/// Converts specified bit pattern into a signed integer.
+/// Use ALT + M to type µ.
+///
+/// - Parameter bitPattern: An unsigned integer that represents bit pattern to convert.
+public func µ(_ bitPattern: UInt) -> Int {
+    // NOTE: Without this helper we cannot use hexadecimal or binary literals
+    // that represent bit patterns overflowing positive range of Int
+    return Int(bitPattern: bitPattern)
+}
