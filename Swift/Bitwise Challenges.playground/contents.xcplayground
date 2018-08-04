@@ -13,5 +13,6 @@
         <page name='Compute X * Y Using Bitwise Operators'/>
         <page name='Divide X by Y Using Addition, Subtraction and Shift Operators'/>
         <page name='Compute X to the power of Y Using Math and Bitwise Operators'/>
+        <page name='Flip Digits Of A Number In Reverse Order'/>
     </pages>
 </playground>
