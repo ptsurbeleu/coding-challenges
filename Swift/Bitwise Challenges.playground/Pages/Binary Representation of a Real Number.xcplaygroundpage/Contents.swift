@@ -2,7 +2,7 @@
 
 /*
  
- Find 100% human-friendly explanation into this coding challenge at http://pabloduo.com/2018/06/10/print-bits-of-real-number.html.
+ Find 100% human-friendly explanation into this coding challenge at http://pabloduo.com/2018/06/10/print-bits-of-real-number
  
  Given a real number between 0 and 1 (e.g., 0.625) that is passed in as a float, write a program that returns its binary representation.
 
