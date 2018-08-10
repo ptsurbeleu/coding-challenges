@@ -1,5 +1,9 @@
 import Foundation
 
+/// This flag controls padding output for the binary conversion helper (default value is 4).
+///
+public var _PADDING: Int = 4
+
 /// Extracts the specified bit from the given number.
 ///
 /// - Parameter num: An integer value to extract specified bit from.
@@ -51,4 +55,28 @@ public func µ(_ bitPattern: UInt) -> Int {
     // NOTE: Without this helper we cannot use hexadecimal or binary literals
     // that represent bit patterns overflowing positive range of Int
     return Int(bitPattern: bitPattern)
+}
+
+extension Int {
+    /// Converts specified signed integer into a binary string.
+    ///
+    public var bin: String {
+        get {
+            var binary = String()
+
+            for nn: Int in 0..._PADDING - 1 {
+                // move the bitmask
+                let bit = (self & (1 << nn)) == 0 ? 0 : 1
+
+                // append nibble delimiter (nibble is a 4-bit aggregation)
+                if nn != 0 && nn % 4 == 0 {
+                    binary = "_" + binary
+                }
+
+                binary = "\(bit)" + binary
+            }
+
+            return binary
+        }
+    }
 }
