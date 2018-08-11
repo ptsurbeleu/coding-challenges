@@ -15,5 +15,6 @@
         <page name='Compute X to the power of Y Using Math and Bitwise Operators'/>
         <page name='Flip Digits Of A Number In Reverse Order'/>
         <page name='Find The Number That Appears Once'/>
+        <page name='Find If The Number Is Power Of 4'/>
     </pages>
 </playground>
