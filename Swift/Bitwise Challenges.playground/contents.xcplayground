@@ -16,5 +16,7 @@
         <page name='Flip Digits Of A Number In Reverse Order'/>
         <page name='Find The Number That Appears Once'/>
         <page name='Find If The Number Is Power Of 4'/>
+        <page name='Find Position Of The Least Significant Bit (Iterative)'/>
+        <page name='Find Position Of The Least Significant Bit (Recursive)'/>
     </pages>
 </playground>

@@ -80,3 +80,19 @@ extension Int {
         }
     }
 }
+
+/// Extracts the least significant bit (aka. LSB) from the given number.
+///
+/// - Parameter bitPattern: A signed integer that represents bit pattern to process.
+public func xfs(bitPattern n: Int) -> UInt {
+    // Unsupported input from the user
+    if n == 0 { return 0 }
+    // Convert to unsigned number to avoid 
+    // runtime errors for edge cases (eq. Int.min or 1 << 63)
+    let nn = UInt(bitPattern: n)
+    // Extract least significant bit only when necessary
+    let lsb = nn & (nn - 1) == 0 ? n : n & -n
+    // Convert to unsigned number since bit pattern is
+    // all the caller needs
+    return UInt(bitPattern: lsb)
+}
