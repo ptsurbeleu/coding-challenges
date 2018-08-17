@@ -15,7 +15,6 @@
 
 /// Adds 1 to the specified number.
 ///
-/// - Parameter n: A number to add 1. 
 func ppo(n: Int) -> Int {
     // Prepare state of the algorithm
     var x = n, y = 1
