@@ -24,7 +24,7 @@
 
 /// Finds position of the least significant bit (recursive).
 ///
-func position(n: Int, _ msb: UInt = 63, _ lsb: UInt = 0) -> Int {
+func position(n: Int, _ lsb: UInt = 0, _ msb: UInt = 63) -> Int {
     // Safe-guard from 0
     if n == 0 { return 0 }
     // Extract only the least significant bit
@@ -41,10 +41,10 @@ func position(n: Int, _ msb: UInt = 63, _ lsb: UInt = 0) -> Int {
     // Adjust search range from either MSB or LSB side
     if x > nn {
         // Update search range and adjust MSB
-        return position(n: n, head - 1, lsb)
+        return position(n: n, lsb, head - 1)
     }
     // Update search range and adjust LSB
-    return position(n: n, msb, head + 1)
+    return position(n: n, head + 1, msb)
 }
 
 
