@@ -18,5 +18,6 @@
         <page name='Find If The Number Is Power Of 4'/>
         <page name='Find Position Of The Least Significant Bit (Iterative)'/>
         <page name='Find Position Of The Least Significant Bit (Recursive)'/>
+        <page name='Find If Two Numbers Have Opposite Signs'/>
     </pages>
 </playground>
