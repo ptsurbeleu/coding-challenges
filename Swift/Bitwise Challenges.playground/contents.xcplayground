@@ -22,5 +22,6 @@
         <page name='Compute X + 1 Using Bitwise Operators'/>
         <page name='Compute X * 3.5 Using Bitwise Operators'/>
         <page name='Clear The Least Significant Bit'/>
+        <page name='Compute X mod Y Using Bitwise Operators'/>
     </pages>
 </playground>
