@@ -24,5 +24,6 @@
         <page name='Clear The Least Significant Bit'/>
         <page name='Compute X mod Y Using Bitwise Operators'/>
         <page name='Bitwise Circular Left Shift Operator'/>
+        <page name='Compare Two Numbers Using Bitwise Operators'/>
     </pages>
 </playground>
