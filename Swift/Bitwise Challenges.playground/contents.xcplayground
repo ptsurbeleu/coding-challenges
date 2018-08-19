@@ -23,5 +23,6 @@
         <page name='Compute X * 3.5 Using Bitwise Operators'/>
         <page name='Clear The Least Significant Bit'/>
         <page name='Compute X mod Y Using Bitwise Operators'/>
+        <page name='Bitwise Circular Left Shift Operator'/>
     </pages>
 </playground>
