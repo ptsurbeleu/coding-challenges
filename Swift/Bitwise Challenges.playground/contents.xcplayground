@@ -26,5 +26,6 @@
         <page name='Bitwise Circular Left Shift Operator'/>
         <page name='Compare Two Numbers Using Bitwise Operators'/>
         <page name='Find XOR Of Two Numbers Without Using The Operator'/>
+        <page name='Custom Case-Insensitive String Comparison'/>
     </pages>
 </playground>
