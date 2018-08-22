@@ -28,5 +28,6 @@
         <page name='Find XOR Of Two Numbers Without Using The Operator'/>
         <page name='Custom Case-Insensitive String Comparison'/>
         <page name='Find XOR Of Given Number&apos;s 0s And 1s Counts'/>
+        <page name='Find XOR Of Two Numbers With MSBs Aligned'/>
     </pages>
 </playground>
