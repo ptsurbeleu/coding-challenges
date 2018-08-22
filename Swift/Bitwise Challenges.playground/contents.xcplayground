@@ -30,5 +30,6 @@
         <page name='Find XOR Of Given Number&apos;s 0s And 1s Counts'/>
         <page name='Find XOR Of Two Numbers With MSBs Aligned'/>
         <page name='Test Given Number For Alternating Bit Pattern'/>
+        <page name='Swap Two Numbers Without Temporary Variable'/>
     </pages>
 </playground>
