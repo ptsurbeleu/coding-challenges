@@ -31,5 +31,6 @@
         <page name='Find XOR Of Two Numbers With MSBs Aligned'/>
         <page name='Test Given Number For Alternating Bit Pattern'/>
         <page name='Swap Two Numbers Without Temporary Variable'/>
+        <page name='Count Bits To Flip And Make Binary Sequences Equal'/>
     </pages>
 </playground>
