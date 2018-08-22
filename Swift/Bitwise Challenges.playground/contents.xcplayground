@@ -29,5 +29,6 @@
         <page name='Custom Case-Insensitive String Comparison'/>
         <page name='Find XOR Of Given Number&apos;s 0s And 1s Counts'/>
         <page name='Find XOR Of Two Numbers With MSBs Aligned'/>
+        <page name='Test Given Number For Alternating Bit Pattern'/>
     </pages>
 </playground>
