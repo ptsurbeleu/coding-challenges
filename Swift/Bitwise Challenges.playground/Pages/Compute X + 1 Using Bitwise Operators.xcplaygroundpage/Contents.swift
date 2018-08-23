@@ -2,6 +2,8 @@
 
 /*
  
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/08/21/
+ 
  Write a function that adds 1 to the given number.
  
  
