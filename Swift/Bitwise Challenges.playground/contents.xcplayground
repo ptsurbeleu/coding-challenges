@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='macos' display-mode='raw'>
     <pages>
+        <page name='Compute 2&apos;s Complement Using Bitwise Operators'/>
         <page name='Insert M Into N Given Two Positions I and J'/>
         <page name='Binary Representation of a Real Number'/>
         <page name='Next Smallest Number Of Same Weight'/>
