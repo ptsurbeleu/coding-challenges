@@ -1,6 +1,8 @@
 //: [Previous](@previous)
 
 /*
+ 
+ Find a human-friendly explanatio of this coding challenge at http://pabloduo.com/2018/08/25/
 
  Write a function to clear the least significant bit in the specified number.
  
