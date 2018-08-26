@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='macos' display-mode='raw'>
     <pages>
+        <page name='Find Numbers From 0 To N With LSB And MSB Only'/>
         <page name='Change Bit In The Specified Position'/>
         <page name='Convert Binary Number To Octal String'/>
         <page name='Find If All Bits Are Set In The Number'/>
