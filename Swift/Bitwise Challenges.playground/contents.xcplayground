@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='macos' display-mode='raw'>
     <pages>
+        <page name='Find Out Number Represented by MSB'/>
         <page name='Find Out Parity Of Binary Array Subrange'/>
         <page name='Compute Subtraction Using Bitwise Operators'/>
         <page name='Find Numbers From 0 To N With LSB And MSB Only'/>
