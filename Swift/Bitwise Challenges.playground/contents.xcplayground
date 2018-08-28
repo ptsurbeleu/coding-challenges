@@ -32,7 +32,7 @@
         <page name='Compute X * 3.5 Using Bitwise Operators'/>
         <page name='Clear The Least Significant Bit'/>
         <page name='Compute X mod Y Using Bitwise Operators'/>
-        <page name='Bitwise Circular Left Shift Operator'/>
+        <page name='Bitwise Circular Left Shift Operator (&amp;&gt;&gt;&gt;)'/>
         <page name='Compare Two Numbers Using Bitwise Operators'/>
         <page name='Find XOR Of Two Numbers Without Using The Operator'/>
         <page name='Custom Case-Insensitive String Comparison'/>
