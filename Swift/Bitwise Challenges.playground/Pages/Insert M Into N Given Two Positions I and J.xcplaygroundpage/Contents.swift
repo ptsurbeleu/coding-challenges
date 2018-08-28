@@ -2,8 +2,7 @@
 
 /*:
  
- Find 100% human-friendly explanation into this coding challenge at http://pabloduo.com/2018/05/23/insert-bits-into-a-number.
- 
+ Find a human-friendly explanation into this coding challenge at http://pabloduo.com/2018/05/23/
  
  You are given two 32-bit numbers, n and m, and two bit positions, i and j. 
  Write a metod to insert m into n such that m starts at bit j and ends at 
@@ -13,13 +12,14 @@
  
  You would not, for example, have i = 2 and j = 3, because m could not fully 
  fit between bit 2 and bit 3.
- 
+
+
  EXAMPLE
  
- Input:  n = 0b0100_0111_1100, m = 0b1_0011, i = 2, j = 6
+    Input: n = 0b01000_11111_00, m = 0b10011, i = 2, j = 6
  
- Output: 0b0100_0100_1100
-                 ^^^ ^^
+    Output: 0b01000_10011_00
+
  */
 
 
@@ -47,7 +47,7 @@ insert(n: 0b1100_0000, m: 0b101, i: 1, j: 3) == 0b1100_1010
 insert(n: 0b1100_0000, m: 0b011, i: 1, j: 2) == 0b1100_0110
 
 // Assert a few use cases of lengthy numbers
-insert(n: 0b0100_0000_0000, m: 0b10011, i: 2, j: 6) == 0b0100_0100_1100
-insert(n: 0b0100_0111_1100, m: 0b10011, i: 2, j: 6) == 0b0100_0100_1100
+insert(n: 0b01000_00000_00, m: 0b10011, i: 2, j: 6) == 0b01000_10011_00
+insert(n: 0b01000_11111_00, m: 0b10011, i: 2, j: 6) == 0b01000_10011_00
 
 //: [Next](@next)
