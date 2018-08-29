@@ -2,7 +2,7 @@
 
 /*
  
- Find 100% human-friendly explanation of this coding challenge at http://pabloduo.com/2018/06/30/
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/06/30/
  
  Given a number, write a function to swap bits in odd and even positions with as few instructions as possible (eq. bit 0 and 1 are swapped, bit 2 and 3 are swapped and etc.).
  
