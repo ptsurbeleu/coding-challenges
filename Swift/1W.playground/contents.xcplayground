@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos'>
+    <pages>
+        <page name='Insert m into n given two positions'/>
+        <page name='Next smallest number with the same weight'/>
+        <page name='Next largest number with the same weight'/>
+        <page name='Number of bits to convert between X and Y'/>
+        <page name='Binary representation of a real number'/>
+        <page name='Swap odd and event bits of a number'/>
+        <page name='Find missing number'/>
+    </pages>
+</playground>
