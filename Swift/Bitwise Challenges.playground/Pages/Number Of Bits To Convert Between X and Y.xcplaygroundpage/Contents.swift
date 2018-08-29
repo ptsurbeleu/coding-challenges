@@ -2,7 +2,7 @@
 
 /*
  
- Find 100% human-friendly explanation of this coding challenge at http://pabloduo.com/2018/06/29/
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/06/29/
  
  Given two integers X and Y, write a function to find out a number of bits required to convert one integer to the other.
  
