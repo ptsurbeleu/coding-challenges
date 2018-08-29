@@ -2,16 +2,16 @@
 
 /*
  
- Find 100% human-friendly explanation into this coding challenge at http://pabloduo.com/2018/06/10/print-bits-of-real-number
+ Find a human-friendly explanation into this coding challenge at http://pabloduo.com/2018/06/10/
  
  Given a real number between 0 and 1 (e.g., 0.625) that is passed in as a float, write a program that returns its binary representation.
 
  
  EXAMPLE
  
- Input:  n = 0.625
+    Input:  n = 0.625
  
- Output: "10100000000000000000000"
+    Output: "10100000000000000000000"
  
  */
 
@@ -35,6 +35,7 @@ func toBinary(num: Float32) -> String {
     return binary
 }
 
+// Assert a few test cases
 toBinary(num: 0.625) == "10100000000000000000000" // true
 toBinary(num: 0.6)   == "10011001100110011001101" // true
 toBinary(num: 0.541) == "10001010011111101111101" // true
