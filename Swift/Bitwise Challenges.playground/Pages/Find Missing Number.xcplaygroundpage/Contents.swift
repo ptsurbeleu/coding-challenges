@@ -2,7 +2,7 @@
 
 /*
 
- Find 100% human-friendly explanation of this coding challenge at http://pabloduo.com/2018/07/02/
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/07/02/
 
  An array contains all the binary integers ("BInt") from 0 through m, except for one number which is missing. Since elements of the array are represented using "BInt" type, "bit" is the only method you can use to access individual bits of an element in the array.
 
@@ -13,9 +13,9 @@
 
  EXAMPLE
 
- Input: array = [0, 1, 3, 4, 5, 6, 7, 8, 9, 10]
+    Input: array = [0, 1, 3, 4, 5, 6, 7, 8, 9, 10]
 
- Output: 2
+    Output: 2
 
  */
 
