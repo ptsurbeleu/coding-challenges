@@ -2,7 +2,7 @@
 
 /*
 
- Find 100% human-friendly explanation of this coding challenge at http://pabloduo.com/2018/07/06/
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/07/06/
 
  Write a program that multiplies two signed integers X and Y. Keep in mind your code needs to meet the following constraints:
 
@@ -19,6 +19,7 @@
  */
 
 /// Multiplies two signed numbers using bitwise operators only.
+///
 func multiply(x: Int, y: Int) -> Int {
     // Since function parameters in Swift are constants,
     // we declare internal variables that we can modify
