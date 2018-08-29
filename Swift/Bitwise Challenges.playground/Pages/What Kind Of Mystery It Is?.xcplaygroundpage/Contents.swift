@@ -2,7 +2,7 @@
 
 /*
  
- Find 100% human-friendly explanation of this coding challenge at http://pabloduo.com/2018/06/28/mystery-function
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/06/28/
  
  Explain what the following function does...
  
@@ -12,12 +12,11 @@
  }
  
  
- 
  EXAMPLE
  
- Input: n = 0b0000_1000; n = 0b0110_0101;
+    Input: n = 0b0000_1000; n = 0b0110_0101;
  
- Output: true; false;
+    Output: true; false;
  
  */
 
