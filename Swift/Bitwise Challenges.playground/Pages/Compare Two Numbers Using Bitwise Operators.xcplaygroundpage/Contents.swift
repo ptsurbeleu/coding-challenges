@@ -23,7 +23,8 @@
 /// Compares two numbers using bitwise operators only.
 ///
 func equal(x: Int, y: Int) -> Bool {
-    // Apply XOR and use result as a boolean literal  
+    // Apply NSNumber-aware XOR imlpementation and 
+    // use result as a boolean literal  
     return !Bool(x ^ y)
 }
 
