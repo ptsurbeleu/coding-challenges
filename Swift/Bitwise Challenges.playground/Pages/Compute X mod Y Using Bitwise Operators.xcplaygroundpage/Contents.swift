@@ -2,9 +2,9 @@
 
 /*
  
- Find a human-friendly explanatio of this coding challenge at http://pabloduo.com/2018/08/26/
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/08/26/
  
- Write a function to compute X mod Y without using division (/) and modulo (%) operators, where Y is a power of 2.
+ Write a function to compute `x mod y` without using division (`/`) and modulo (`%`) operators, where `y` is a power of 2.
  
  
  EXAMPLE:
@@ -15,7 +15,7 @@
  
  */
 
-/// Computes X mod Y, where Y is a power of 2.
+/// Computes `x mod y`, where `y` is a power of 2.
 ///
 func mod(x: Int, y: Int) -> Int {
     // Convert into unsigned integers
