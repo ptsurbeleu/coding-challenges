@@ -11,14 +11,14 @@
  
     Input: n = 0x40 (eq. 0b0100_0000)
  
-    Output: 6
+    Output: 7
  
  
  EXAMPLE:
  
     Input: n = 0x50000 (eq. 0b0101_0000_0000_0000_0000)
  
-    Output: 16
+    Output: 17
  
  */
 
