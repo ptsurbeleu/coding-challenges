@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='macos'>
     <pages>
-        <page name='Insert m into n given two positions'/>
-        <page name='Next smallest number with the same weight'/>
-        <page name='Next largest number with the same weight'/>
-        <page name='Number of bits to convert between X and Y'/>
-        <page name='Binary representation of a real number'/>
-        <page name='Swap odd and event bits of a number'/>
-        <page name='Find missing number'/>
+        <page name='01 - Insert m into n given two positions'/>
+        <page name='02 - Next smallest number with the same weight'/>
+        <page name='03 - Next largest number with the same weight'/>
+        <page name='04 - Number of bits to convert between X and Y'/>
+        <page name='05 - Binary representation of a real number'/>
+        <page name='06 - Swap odd and event bits of a number'/>
+        <page name='07 - Find missing number'/>
+        <page name='08 - Compute sum using bitwise operators'/>
+        <page name='09 - Compute x * y using bitwise operators'/>
+        <page name='0A - Divide x by y using addion, subtraction and shift operators'/>
+        <page name='0B - Compute x to the power of y using math and bitwise operators'/>
+        <page name='0C - Flip digits of a number in reverse order'/>
+        <page name='0D - Find the number that appears once'/>
+        <page name='0E - Find if the number is power of 4'/>
+        <page name='0F - Find position of the least significant bit (iterative)'/>
+        <page name='10 - Find if two numbers have opposite signs'/>
+        <page name='11 - Compute x + 1 using bitwise operators'/>
+        <page name='12 - Compute x * 3.5 using bitwise operators'/>
+        <page name='13 - Clear the least significant bit'/>
+        <page name='14 - Compute x mod y using bitwise operators'/>
+        <page name='15 - Bitwise circular left shift operator (&amp;&gt;&gt;&gt;)'/>
+        <page name='16 - Compare two numbers using bitwise operators'/>
+        <page name='17 - Find XOR of two numbers without using the operator'/>
+        <page name='18 - Custom case-insensitive string comparison'/>
+        <page name='19 - Find XOR of given number&apos;s 0s and 1s counts'/>
+        <page name='1A - Find XOR of two numbers with MSBs aligned'/>
+        <page name='1B - Test given number for alternating bit pattern'/>
+        <page name='1C - Swap two numbers without temporary variable'/>
+        <page name='1D - Count bits to flip and make binary sequences equal'/>
+        <page name='1E - Compute parity of a word (v1)'/>
+        <page name='1F - Find out a number represented by MSB'/>
+        <page name='20 - Find out parity of binary array subrange'/>
+        <page name='21 - Compute subtraction using bitwise operators'/>
+        <page name='22 - Find numbers from 0 to N with LSB and MSB only'/>
+        <page name='23 - Change bit in the specified position'/>
+        <page name='24 - Convert binary number to octal string'/>
+        <page name='25 - Find if all bits are set in the number'/>
+        <page name='26 - Toggle the rightmost bit set to 0'/>
+        <page name='27 - Compute 2&apos;s complement using bitwise operators'/>
     </pages>
 </playground>
