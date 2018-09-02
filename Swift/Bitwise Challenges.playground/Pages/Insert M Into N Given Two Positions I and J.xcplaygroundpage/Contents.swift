@@ -26,7 +26,7 @@
 // Inserts bits of (m) into (n) using two bit positions i and j
 func insert(n: Int, m: Int, i: Int, j: Int) -> Int {
     // Compute initial bits of the mask
-    let x = 1 << (j - 1), y = (x == 1) ? x : x - 1
+    let y = (1 << j) - 1
     // Shift and invert initial bits to create mask
     let mask = ~(y << i)
     // Apply mask to clear n's bits
