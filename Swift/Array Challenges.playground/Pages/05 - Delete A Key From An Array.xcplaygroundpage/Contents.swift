@@ -2,7 +2,7 @@
 
 /*
 
- Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/09/09
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/09/08
 
  Write a function that takes a sequence of numbers (eq. an array) and a key (a number), rearranges the sequence such that all occurences of the key are removed while the remaining numbers in the sequence shifted to the left to fill the emptied spaces (eq. compacted) and returns an update sequence alongside with the number of elements remaining.
 
