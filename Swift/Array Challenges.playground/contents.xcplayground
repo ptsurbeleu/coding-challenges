@@ -6,5 +6,7 @@
         <page name='03 - Multiply Two Arbitrary Precision Numbers'/>
         <page name='04 - Advancing Through A Game Board'/>
         <page name='05 - Delete A Key From An Array'/>
+        <page name='06 - Delete Duplicates From A Sorted Array'/>
+        <page name='07 - Buy And Sell A Stock Once'/>
     </pages>
 </playground>
