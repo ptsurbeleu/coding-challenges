@@ -8,5 +8,6 @@
         <page name='05 - Delete A Key From An Array'/>
         <page name='06 - Delete Duplicates From A Sorted Array'/>
         <page name='07 - Buy And Sell A Stock Once'/>
+        <page name='08 - Buy And Sell A Stock Twice'/>
     </pages>
 </playground>
