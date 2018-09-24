@@ -9,5 +9,6 @@
         <page name='06 - Delete Duplicates From A Sorted Array'/>
         <page name='07 - Buy And Sell A Stock Once'/>
         <page name='08 - Buy And Sell A Stock Twice'/>
+        <page name='09 - Enumerate All Primes To N'/>
     </pages>
 </playground>
