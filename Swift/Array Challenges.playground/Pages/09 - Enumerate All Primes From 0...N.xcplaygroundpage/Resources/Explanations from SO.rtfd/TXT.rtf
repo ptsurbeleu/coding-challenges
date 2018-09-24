@@ -1,0 +1,160 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red27\green29\blue31;\red235\green236\blue237;\red36\green38\blue41;
+\red104\green26\blue29;\red43\green39\blue19;\red114\green121\blue129;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww17280\viewh12420\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \expnd0\expndtw0\kerning0
+The algorithm used by your prime generator code is called "Sieve of Eratosthenes". In general, it creates a list of numbers, and iterates over the list. \
+\
+All multiplications of the current number are removed from the list, and the remaining numbers are prime.\
+\
+For example, let us consider 
+\f1\fs26 \cb3 [2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+\f0\fs30 \cb1 . We encounter 2, so we remove all even numbers from the list:\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs26 \cf4 \cb3 [\cf5 2\cf4 ,\cf5 3\cf4 ,\cf5 5\cf4 ,\cf5 7\cf4 ,\cf5 9\cf4 ,\cf5 11\cf4 ,\cf5 13\cf4 ,\cf5 15\cf4 ]\cf6 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \cb1 \
+Same for 3:\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs26 \cf4 \cb3 [\cf5 2\cf4 ,\cf5 3\cf4 ,\cf5 5\cf4 ,\cf5 7\cf4 ,\cf5 11\cf4 ,\cf5 13\cf4 ]\cf6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 5
+\f0\fs30 \cb1 , 
+\f1\fs26 \cb3 7
+\f0\fs30 \cb1 , 
+\f1\fs26 \cb3 11
+\f0\fs30 \cb1  and 
+\f1\fs26 \cb3 13
+\f0\fs30 \cb1  have no multiplications in the list, so we remove nothing and remain with a list of primes.\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs38 \cf2 \
+Visual example\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs30 \cf2 {{\NeXTGraphic QXx0I.png \width8660 \height7180 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf2 \
+In this example (courtesy of Wikipedia), all multiplications of 2, 3 and 5 were removed from the list - multiplications of 2 were painted pink, multiplication of 3 were painted in green, and multiplications of 5 in dark blue. 7 will be iterated next, so it's highlighted. The dark colored numbers are prime, the light colored numbers are not prime, and the gray numbers have net yet been reached.\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs38 \cf2 \
+Optimizations in your code\
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs30 \cf2 As mentioned by @BenJackson, your code is optimized twice:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Firstly, it only stores odd numbers only starting from 3, because we know that even numbers are not prime (except 2).\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Secondly, for the number p, it only starts to sieve from p\'b2. This is correct because if 
+\f1\fs26 \cb3 n<p
+\f0\fs30 \cb1  then 
+\f1\fs26 \cb3 n*p
+\f0\fs30 \cb1  was already sieved when multiplications of 
+\f1\fs26 \cb3 n
+\f0\fs30 \cb1  were sieved.\
+\pard\tx720\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 This is the reason why the cryptic comment:\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs26 \cf7 \cb3 // sieving from p^2, whose index is 2i^2 + 6i + 3\cf6 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \cb1 \
+Suppose that our algorithm has reached the second item in the vector, therefore 
+\f1\fs26 \cb3 i = 1
+\f0\fs30 \cb1 . The number in question is 5, because the index 
+\f1\fs26 \cb3 i
+\f0\fs30 \cb1  denotes the number 
+\f1\fs26 \cb3 2i + 3
+\f0\fs30 \cb1  (first optimization).\
+\
+We should sieve all multiplications of 
+\f1\fs26 \cb3 5
+\f0\fs30 \cb1  from 
+\f1\fs26 \cb3 25
+\f0\fs30 \cb1  onwards. The index that represents 
+\f1\fs26 \cb3 25
+\f0\fs30 \cb1  is 
+\f1\fs26 \cb3 11
+\f0\fs30 \cb1 , because 
+\f1\fs26 \cb3 25 = 2 * 11 + 3
+\f0\fs30 \cb1 . Following your printouts, it removes indices 
+\f1\fs26 \cb3 11, 16, 21, 26, ...
+\f0\fs30 \cb1 , which correspond to the numbers 
+\f1\fs26 \cb3 25, 35, 45, 55, ..
+\f0\fs30 \cb1  - all odd multiplications of 5 we'd like to remove.\
+\
+\
+The table of primes only stores odd values starting at 3 (obviously even values cannot be prime).\
+\
+The relation is given in the line 
+\f1\fs26 \cb3 int p = (i << 1) + 3
+\f0\fs30 \cb1 , or 
+\f1\fs26 \cb3 p = 2i + 3
+\f0\fs30 \cb1 .\
+\
+Now solve that for 
+\f1\fs26 \cb3 i
+\f0\fs30 \cb1 , getting 
+\f1\fs26 \cb3 i = (p - 3)/2
+\f0\fs30 \cb1 . Now what 
+\f1\fs26 \cb3 i
+\f0\fs30 \cb1  corresponds to 
+\f1\fs26 \cb3 p^2
+\f0\fs30 \cb1 ?\
+\
+Plug in 
+\f1\fs26 \cb3 (2i + 3)^2
+\f0\fs30 \cb1  to that second formula and simplify: 
+\f1\fs26 \cb3 i = ((2i + 3)^2 - 3)/2 = (4i^2 + 12i + 9 - 3)/2 = (4i^2 + 12i + 6)/2 = 2i^2 + 6i + 3
+\f0\fs30 \cb1 \
+\
+Now you have the 
+\f1\fs26 \cb3 i
+\f0\fs30 \cb1  for 
+\f1\fs26 \cb3 p^2
+\f0\fs30 \cb1  in terms of the 
+\f1\fs26 \cb3 i
+\f0\fs30 \cb1  for 
+\f1\fs26 \cb3 p
+\f0\fs30 \cb1 .\
+\
+Example: Let's say 
+\f1\fs26 \cb3 i = 1
+\f0\fs30 \cb1 , thus the entry 
+\f1\fs26 \cb3 is_prime[i]
+\f0\fs30 \cb1  is a test of the prime 
+\f1\fs26 \cb3 p = 2i + 3
+\f0\fs30 \cb1 , or 
+\f1\fs26 \cb3 p = 5
+\f0\fs30 \cb1 . So yes, it is prime. Now the sieve  (explained elsewhere) wants to start marking non-primes at 25. \
+\
+It needs to know what 
+\f1\fs26 \cb3 i
+\f0\fs30 \cb1  corresponds to 25. Now you could simply compute 
+\f1\fs26 \cb3 p*p
+\f0\fs30 \cb1  and then insert that into 
+\f1\fs26 \cb3 i = (p - 3)/2
+\f0\fs30 \cb1  and get 
+\f1\fs26 \cb3 j = 11
+\f0\fs30 \cb1 . \
+\
+The code has skipped those intermediate steps (as I showed above) to compute 
+\f1\fs26 \cb3 j = 2i^2 + 6i + 3
+\f0\fs30 \cb1  and gotten 
+\f1\fs26 \cb3 j = 11
+\f0\fs30 \cb1  directly.\
+}

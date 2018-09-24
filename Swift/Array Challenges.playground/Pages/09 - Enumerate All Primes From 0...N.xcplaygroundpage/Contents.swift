@@ -2,7 +2,9 @@
 
 /*
  
- Write a function that takes a number `n` and returns an array of all the primes between `1` and `n`.
+ Find a human-friendly explanation of this coding challenge at http://pabloduo.com/2018/09/12
+ 
+ Write a function that takes a number `n` and returns an array of all the primes between `0` and `n`.
  
  
  EXAMPLE:
@@ -14,7 +16,7 @@
  */
 
 
-/// Finds all prime numbers from 1 up to `n`.
+/// Finds all prime numbers from 0 up to `n`.
 ///
 /// - Parameter n: A number to find prime numbers up to.
 func primes(n: Int) -> [Int] {
