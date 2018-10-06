@@ -12,5 +12,6 @@
         <page name='09 - Enumerate All Primes From 0...N'/>
         <page name='0A - Permute Elements Of An Array'/>
         <page name='0B - Compute The Next Permutation'/>
+        <page name='0C - Sample Offline Data'/>
     </pages>
 </playground>
