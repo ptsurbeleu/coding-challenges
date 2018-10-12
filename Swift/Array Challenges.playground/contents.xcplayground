@@ -13,5 +13,6 @@
         <page name='0A - Permute Elements Of An Array'/>
         <page name='0B - Compute The Next Permutation'/>
         <page name='0C - Sample Offline Data'/>
+        <page name='0D - Sample Online Data'/>
     </pages>
 </playground>
