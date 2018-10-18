@@ -14,5 +14,6 @@
         <page name='0B - Compute The Next Permutation'/>
         <page name='0C - Sample Offline Data'/>
         <page name='0D - Sample Online Data'/>
+        <page name='0E - Compute A Random Permutation'/>
     </pages>
 </playground>
