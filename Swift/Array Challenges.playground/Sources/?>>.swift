@@ -4,7 +4,7 @@ import Foundation
 public typealias Icon = Character
 
 // Internal definitions
-let PASS: Icon = "✅", FAIL: Icon = "❌"
+public let PASS: Icon = "✅", FAIL: Icon = "❌"
 
 /// Custom infix operator to validate test assertion statements using
 /// iconographics vs. strings to improve test assertions readability.
