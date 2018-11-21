@@ -26,18 +26,16 @@ typealias Profit = Double
 /// - Parameter n: A sequence of daily stock prices.
 func max(n: [StockPrice]) -> Profit {
     // Prepare state of the algorithm
-    var smallest = StockPrice.max, profit: Profit = 0
+    var buy = StockPrice.max, sell = Profit.zero
     // Keep enumerating each stock price
     for price in n {
-        // Find out the difference so far
-        let today = price - smallest
-        // Find out the maximum profit so far
-        profit = max(profit, today)
         // Find out the smallest price so far
-        smallest = min(smallest, price)
+        buy = min(buy, price)
+        // Find out the maximum profit so far
+        sell = max(sell, price - buy)
     }
     // Here is the answer
-    return profit
+    return sell
 }
 
 
