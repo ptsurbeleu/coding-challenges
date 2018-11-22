@@ -37,18 +37,18 @@ func random(n: Int, k: Int) -> [Int] {
 
 
 // Assert a few test cases between 0...99
-random(n:  99, k: 6)
-random(n:  99, k: 6)
-random(n:  99, k: 6)
-random(n:  99, k: 6)
-random(n:  99, k: 6)
+random(n:  99, k: 6) ?>> UNIQUE_ELEMENTS
+random(n:  99, k: 6) ?>> UNIQUE_ELEMENTS
+random(n:  99, k: 6) ?>> UNIQUE_ELEMENTS
+random(n:  99, k: 6) ?>> UNIQUE_ELEMENTS
+random(n:  99, k: 6) ?>> UNIQUE_ELEMENTS
 
 // Assert a few test cases between 0...999
-random(n: 999, k: 6)
-random(n: 999, k: 6)
-random(n: 999, k: 6)
-random(n: 999, k: 6)
-random(n: 999, k: 6)
+random(n: 999, k: 6) ?>> UNIQUE_ELEMENTS
+random(n: 999, k: 6) ?>> UNIQUE_ELEMENTS
+random(n: 999, k: 6) ?>> UNIQUE_ELEMENTS
+random(n: 999, k: 6) ?>> UNIQUE_ELEMENTS
+random(n: 999, k: 6) ?>> UNIQUE_ELEMENTS
 
 
 //: [Next](@next)
