@@ -17,5 +17,6 @@
         <page name='0E - Compute A Random Permutation'/>
         <page name='0F - Compute A Random Subset'/>
         <page name='10 - Generate Non-Uniform Random Number'/>
+        <page name='11 - The Sudoku Checker Problem'/>
     </pages>
 </playground>
