@@ -30,9 +30,9 @@ func pass(n: [Int]) -> Bool {
     // Define edge of the game board
     let edgeOf = n.count
     // Prepare the state of the algorithm
-    var position = 0, offsetBy = 0
+    var offsetBy = 0, position = 0
     // Try every possible move thru the game board
-    while position < edgeOf && position <= offsetBy {
+    while edgeOf > position && offsetBy >= position {
         // Find out the maximum possible offset to advance by
         offsetBy = max(offsetBy, n[position] + position)
         // Move to the next position and discover moves allowed
