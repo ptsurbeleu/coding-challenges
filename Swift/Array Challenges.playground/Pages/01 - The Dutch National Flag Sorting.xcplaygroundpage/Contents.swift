@@ -23,20 +23,20 @@ func sort(n: [Int], i: Int) -> [Int] {
     // Prepare state of the algorithm
     var nn = n, less = 0, same = 0, more = n.count
     // Keep sorting while there are unsorted elements
-    while same < more {
-        if nn[same] < sortBy {
+    while more > same {
+        if sortBy > nn[same] {
             // Swap elements that are less and same
             swap(&nn, less, same)
             // Move on to the next pair of elements
             less += 1; same += 1
-        } else if nn[same] == sortBy {
-            // Move on to the next same element
-            same += 1;
-        } else {
+        } else if nn[same] > sortBy {
             // Move on the the previous element
             more -= 1
             // Swap elements that are same and more
             swap(&nn, same, more)
+        } else {
+            // Move on to the next same element
+            same += 1
         }
     }
     // Here is our answer
@@ -44,9 +44,9 @@ func sort(n: [Int], i: Int) -> [Int] {
 }
 
 // Assert a few test cases
-sort(n: [1,2,3,1,2,3],    i: 4) == [1,1,2,2,3,3]
-sort(n: [0,1,0,1,0,1],    i: 2) == [0,0,0,1,1,1]
-sort(n: [-1,0,-1,0,-1,0], i: 1) == [-1,-1,-1,0,0,0]
+sort(n: [1,2,3,1,2,3],    i: 4) ?>> [1,1,2,2,3,3]
+sort(n: [0,1,0,1,0,1],    i: 2) ?>> [0,0,0,1,1,1]
+sort(n: [-1,0,-1,0,-1,0], i: 1) ?>> [-1,-1,-1,0,0,0]
 
 
 //: [Next](@next)
