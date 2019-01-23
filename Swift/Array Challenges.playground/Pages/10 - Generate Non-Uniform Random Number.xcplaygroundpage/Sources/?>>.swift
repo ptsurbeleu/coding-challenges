@@ -9,8 +9,8 @@ public typealias Assertion = (key: Int, probability: Double)
 /// - Parameter lhs: An actual value to compare with.
 /// - Parameter rhs: An expected value to compare with.
 public func ?>>(lhs: [Int:Int], rhs: Assertion) -> Icon {
-    // Ensure expected value is allowed
-    if lhs[rhs.key] == nil { print("Key `\(rhs.key)` is not found"); return FAIL }
+    // Query for the sentinel value (eq. not implemented case)
+    if lhs[-1] != nil { print("Non-uniform random generator is not implemented"); return FAIL }
     // Prepare shorthands to avoid repetition
     let N = total(map: lhs), p = rhs.probability
     // Calculate value of sigma of the specified key
