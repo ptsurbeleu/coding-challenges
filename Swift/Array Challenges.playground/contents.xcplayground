@@ -18,5 +18,6 @@
         <page name='0F - Compute A Random Subset'/>
         <page name='10 - Generate Non-Uniform Random Number'/>
         <page name='11 - The Sudoku Checker Problem'/>
+        <page name='12 - Compute The Spiral Ordering Of A 2D Array'/>
     </pages>
 </playground>
