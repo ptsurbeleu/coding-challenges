@@ -19,5 +19,6 @@
         <page name='10 - Generate Non-Uniform Random Number'/>
         <page name='11 - The Sudoku Checker Problem'/>
         <page name='12 - Compute The Spiral Ordering Of A 2D Array'/>
+        <page name='13 - Rotate A 2D Array (Data Structure)'/>
     </pages>
 </playground>
