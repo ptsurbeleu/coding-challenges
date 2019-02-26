@@ -19,23 +19,21 @@
 /// - Parameter n: A sorted array to remove duplicates from.
 func rm(n: [Int]) -> [Int] {
     // Prepare state of the algorithm
-    var seq = n, read = 0, write = 0, key = 0
+    var seq = n, write = 0, key = 0
     // Keep processing unless reading head is out of bounds
-    while read < n.count {
+    for read in 0..<n.count {
         // Match reading head with the key from the last iteration 
         if seq[read] == key {
             // Set to 0 value of the head's element 
-            // and advance to the next position
-            seq[read] = 0; read += 1
-            // Skip to the next processing cycle
-            continue
+            // and skip to the next processing cycle
+            seq[read] = 0; continue
         }
         // Re-discover the key used as a marker to find duplicates
         key = seq[read]
         // Mismatch between writing & reading heads is a signal to swap
         if write != read { swap(&seq, write, read) }
         // Move both writing & reading heads to their next elements
-        read += 1; write += 1
+        write += 1
     }
     // Here is the answer
     return seq
