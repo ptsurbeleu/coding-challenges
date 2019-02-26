@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' executeOnSourceChanges='false'>
+    <pages>
+        <page name='01 - The Dutch National Flag Sorting'/>
+        <page name='02 - Increment an Arbitrary Precision Number'/>
+        <page name='03 - Multiply Two Arbitrary Precision Numbers'/>
+        <page name='04 - Advancing Through A Game Board'/>
+        <page name='05 - Delete a Key From an Array'/>
+        <page name='06 - Delete Duplicates From a Sorted Array'/>
+        <page name='07 - Buy And Sell A Stock Once'/>
+        <page name='08 - Buy And Sell A Stock Twice'/>
+        <page name='09 - Enumerate All Primes From 0...N'/>
+        <page name='0A - Permute Elements Of An Array'/>
+        <page name='0B - Compute The Next Permutation'/>
+        <page name='0C - Sample Offline Data'/>
+        <page name='0D - Sample Online Data'/>
+        <page name='0E - Compute A Random Permutation'/>
+        <page name='0F - Compute A Random Subset'/>
+        <page name='10 - Generate Non-Uniform Random Number'/>
+        <page name='11 - The Sudoku Checker Problem'/>
+        <page name='12 - Compute The Spiral Ordering Of A 2D Array'/>
+        <page name='13 - Rotate A 2D Array (Data Structure)'/>
+    </pages>
+</playground>
