@@ -9,16 +9,11 @@ import Foundation
 /// - Parameter x: An index of the element to compare and swap with.
 public func swapNextInSuffix(s: inout [Int], x: Int) {
     // Prepare state of the algorithm
-    let lhs = s[x], y = s.count - 1
+    var y = s.count - 1
     // Enumerate sequence's suffix elements in reverse order,
-    // eq. from n...0
-    for i in (x...y).reversed() {
-        // Skip entries smaller than or equal to the entry of `x` 
-        if lhs >= s[i] { continue }
-        // Swap entry of `x` with the entry of `i`, eq. it would be
-        // the first entry of `i` greater than entry of `x`
-        swap(&s, x, i)
-        // Break out from the loop, we're done
-        break
-    }
+    // eq. from y...x
+    while s[x] >= s[y] { y -= 1 }
+    // Swap entry of `x` with the entry of `y`, eq. it would be
+    // the first entry of `y` greater than entry of `x`
+    swap(&s, x, y)
 }
