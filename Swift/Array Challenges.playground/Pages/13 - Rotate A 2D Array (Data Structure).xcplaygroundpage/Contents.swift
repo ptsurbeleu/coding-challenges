@@ -13,18 +13,15 @@
              [ 9, 10, 11, 12],
              [13, 14, 15, 16]]
  
-    Output: [[13,  9, 5, 1],
-             [14, 10, 6, 2],
-             [15, 11, 7, 3],
-             [16, 12, 8, 4]]
+    Output: [13, 9, 5, 1, 14, 10, 6, 2, 15, 11, 7, 3, 16, 12, 8, 4]
  
  */
 
-/// Wrapper type struct to provide clockwise-rotated access to the elements 
-/// of the original 2D array (eq. matrxi).
+/// Wrapper type struct to provide clockwise-rotated access
+/// to the elements of the original 2D array (eq. matrix).
 struct RotatedMatrix<Element: Equatable>: Collection {
 
-    /// Copy of the original matrix. 
+    /// Copy of the original matrix.
     let matrix: [[Element]]
 
     /// Shorthand to the matrix's elements count.
@@ -35,31 +32,34 @@ struct RotatedMatrix<Element: Equatable>: Collection {
     /// If the collection is empty, `startIndex` is equal to `endIndex`.
     var startIndex: Int { return matrix.startIndex }
     
-    /// The collection's "past the end" position---that is, the position one
-    /// greater than the last valid subscript argument.
+    /// The collection's "past the end" position---that is, the
+    /// position one greater than the last valid subscript argument.
     ///
     /// If the collection is empty, `endIndex` is equal to `startIndex`.
     var endIndex: Int { return size * size }
     
     /// Accesses the element at the specified position.
     ///
-    /// You can subscript a collection with any valid index other than the
-    /// collection's end index. The end index refers to the position one past
-    /// the last element of a collection, so it doesn't correspond with an
-    /// element.
+    /// You can subscript a collection with any valid index other than
+    /// the collection's end index. The end index refers to the position
+    /// one past the last element of a collection, so it doesn't
+    /// correspond with an element.
     ///
-    /// - Parameter position: The position of the element to access. `position`
-    ///   must be a valid index of the collection that is not equal to the
-    ///   `endIndex` property.
+    /// - Parameter position: The position of the element to access.
+    ///   `position` must be a valid index of the collection that is
+    ///   not equal to the `endIndex` property.
     ///
     /// - Complexity: O(1)
     subscript(position: Int) -> Element {
         // Guard access beyond boundaries of the original matrix
         precondition(position < endIndex, "Can't subscript an element in position beyond endIndex")
+        // Compute start and offset based on the current position 
+        let start = size - 1, offset = position % size 
         // Translate position into coordinates of the matrix
-        let x = position / size, y = position % size
+        let x = start - offset, y = position / size
+        print("offset = \(offset), x= \(x), y = \(y)")
         // Query element from the original matrix
-        return matrix[size - 1 - y][x]
+        return matrix[x][y]
     }
     
     /// Returns the position immediately after the given index.
@@ -115,11 +115,12 @@ func ?>>(lhs: RotatedMatrix<Int>, rhs: [[Int]]) -> Icon {
 }
 
 
-/// Assert a few basic test cases
+// Assert a few basic test cases
 RotatedMatrix(matrix: MX0) ?>> MO0
 RotatedMatrix(matrix: MX1) ?>> MO1
 RotatedMatrix(matrix: MX2) ?>> MO2
 RotatedMatrix(matrix: MX3) ?>> MO3
+
 
 // Assert a few advanced test cases 
 RotatedMatrix(matrix: MX4) ?>> MO4
@@ -128,6 +129,7 @@ RotatedMatrix(matrix: MX6) ?>> MO6
 RotatedMatrix(matrix: MX7) ?>> MO7
 RotatedMatrix(matrix: MX8) ?>> MO8
 RotatedMatrix(matrix: MX9) ?>> MO9
+
 
 // Assert a few advanced test cases 
 RotatedMatrix(matrix: MX10) ?>> MO10
