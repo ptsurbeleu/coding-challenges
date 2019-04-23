@@ -40,5 +40,6 @@
         <page name='25 - Find if all bits are set in the number'/>
         <page name='26 - Toggle the rightmost bit set to 0'/>
         <page name='27 - Compute 2&apos;s complement using bitwise operators'/>
+        <page name='28 - What kind of mystery it is?'/>
     </pages>
 </playground>

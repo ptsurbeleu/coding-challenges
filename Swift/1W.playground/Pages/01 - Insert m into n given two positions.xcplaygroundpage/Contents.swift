@@ -22,29 +22,21 @@
  */
 
 func insert(n: Int, m: Int, i: Int, j: Int) -> Int {
-    // Compute initial bits of the mask
-
-    // Shift and invert initial bits to create mask
-
-    // Apply mask to clear n's bits
-
-    // Shift m's bits into i-th position, as requested
-
-    // OR masked bits of n and shifted bits of m to get an answer
-
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...")
 }
 
 // Assert a few very basic use cases
-insert(n: 0b1001, m: 0b1, i: 1, j: 1) == 0b1011
-insert(n: 0b1001, m: 0b1, i: 1, j: 1) == 0b1011
-insert(n: 0b1001, m: 0b0, i: 0, j: 1) == 0b1000
+insert(n: 0b1001, m: 0b1, i: 1, j: 1) ?>> 0b1011
+insert(n: 0b1001, m: 0b1, i: 1, j: 1) ?>> 0b1011
+insert(n: 0b1001, m: 0b0, i: 0, j: 1) ?>> 0b1000
 
 // Assert a few other use cases of not so lengthy numbers
-insert(n: 0b1100_0000, m: 0b101, i: 1, j: 3) == 0b1100_1010
-insert(n: 0b1100_0000, m: 0b011, i: 1, j: 2) == 0b1100_0110
+insert(n: 0b1100_0000, m: 0b101, i: 1, j: 3) ?>> 0b1100_1010
+insert(n: 0b1100_0000, m: 0b011, i: 1, j: 2) ?>> 0b1100_0110
 
 // Assert a few use cases of lengthy numbers
-insert(n: 0b01000_00000_00, m: 0b10011, i: 2, j: 6) == 0b01000_10011_00
-insert(n: 0b01000_11111_00, m: 0b10011, i: 2, j: 6) == 0b01000_10011_00
+insert(n: 0b01000_00000_00, m: 0b10011, i: 2, j: 6) ?>> 0b01000_10011_00
+insert(n: 0b01000_11111_00, m: 0b10011, i: 2, j: 6) ?>> 0b01000_10011_00
 
 //: [Next](@next)

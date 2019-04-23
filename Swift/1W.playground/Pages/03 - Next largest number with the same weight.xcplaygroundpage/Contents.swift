@@ -11,62 +11,40 @@
  
  EXAMPLE
  
- Input: num = 0b11011001111100 (13948)
+    Input: num = 0b11_0110_0111_1100 (13948)
  
- Output: 0b11011010001111 (13967)
- 
+    Output:      0b11_0110_1000_1111 (13967)
+                           ^^^^ ^^^^
  */
 
+
 func nextLargest(n: Int) -> Int {
-    // Prepare state of the algorithm
-
-    // Loop thru until we run out of bits to inspect
-
-        // Rightmost non-trailing zero terminates
-
-            // Signal to flip bits & terminate the loop
-
-
-        // Swap bits only if they are different
-
-            // Swap bits in-place
-
-            // Move on to the next bit
-
-
-        // Shift by 1 bit to the right
-
-        // Move on to the next pair of bits
-
-
-    // Flip rightmost non-trailing 0 with 1
-
-    // And in some cases there is literally nothing we can do
-
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...")
 }
 
 
 // Assert a few very basic cases with a single bit
-nextLargest(n: 0b0001) == 0b0010 // (true)
-nextLargest(n: 0b0010) == 0b0100 // (true)
-nextLargest(n: 0b0100) == 0b1000 // (true)
+nextLargest(n: 0b0001) ?>> 0b0010
+nextLargest(n: 0b0010) ?>> 0b0100
+nextLargest(n: 0b0100) ?>> 0b1000
 
 // Assert a few basic cases with multiple bits
-nextLargest(n: 0b0011) == 0b0101 // (true)
-nextLargest(n: 0b0101) == 0b0110 // (true)
-nextLargest(n: 0b0110) == 0b1001 // (true)
-nextLargest(n: 0b0111) == 0b1011 // (true)
-nextLargest(n: 0b1011) == 0b1101 // (true)
+nextLargest(n: 0b0011) ?>> 0b0101
+nextLargest(n: 0b0101) ?>> 0b0110
+nextLargest(n: 0b0110) ?>> 0b1001
+nextLargest(n: 0b0111) ?>> 0b1011
+nextLargest(n: 0b1011) ?>> 0b1101
 
 // Assert a few edge cases
-nextLargest(n:   0) == -1 // (true)
-nextLargest(n:  -1) == -1 // (true)
-nextLargest(n: -11) == -1 // (true)
+nextLargest(n:   0) ?>> -1
+nextLargest(n:  -1) ?>> -1
+nextLargest(n: -11) ?>> -1
 
 // Assert a few slightly more involved cases
-nextLargest(n: 0b11011001111100) == 0b11011010001111 // (true)
-nextLargest(n: 0b11011001100100) == 0b11011001101000 // (true)
-nextLargest(n: 0b11011100000000) == 0b11100000000011 // (true)
-nextLargest(n: 0b11011000000000) == 0b11100000000001 // (true)
+nextLargest(n: 0b11_0110_0111_1100) ?>> 0b11_0110_1000_1111
+nextLargest(n: 0b11_0110_0110_0100) ?>> 0b11_0110_0110_1000
+nextLargest(n: 0b11_0111_0000_0000) ?>> 0b11_1000_0000_0011
+nextLargest(n: 0b11_0110_0000_0000) ?>> 0b11_1000_0000_0001
 
 //: [Next](@next)
