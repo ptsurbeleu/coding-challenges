@@ -50,23 +50,24 @@ func find(array: [BInt], position: Int = 0) -> UInt {
     return (x << 1) | bit
 }
 
+
 // Assert 1 is missing
-find(array: BInt.from(0, 2, 3, 4, 5, 6, 7, 8, 9, 10)) == 1
+find(array: BInt.from(0, 2, 3, 4, 5, 6, 7, 8, 9, 10)) ?>> 1
 // Assert 2 is missing
-find(array: BInt.from(0, 1, 3, 4, 5, 6, 7, 8, 9, 10)) == 2
+find(array: BInt.from(0, 1, 3, 4, 5, 6, 7, 8, 9, 10)) ?>> 2
 // Assert 3 is missing
-find(array: BInt.from(0, 1, 2, 4, 5, 6, 7, 8, 9, 10)) == 3
+find(array: BInt.from(0, 1, 2, 4, 5, 6, 7, 8, 9, 10)) ?>> 3
 // Assert 4 is missing
-find(array: BInt.from(0, 1, 2, 3, 5, 6, 7, 8, 9, 10)) == 4
+find(array: BInt.from(0, 1, 2, 3, 5, 6, 7, 8, 9, 10)) ?>> 4
 // Assert 5 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 6, 7, 8, 9, 10)) == 5
+find(array: BInt.from(0, 1, 2, 3, 4, 6, 7, 8, 9, 10)) ?>> 5
 // Assert 6 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 5, 7, 8, 9, 10)) == 6
+find(array: BInt.from(0, 1, 2, 3, 4, 5, 7, 8, 9, 10)) ?>> 6
 // Assert 7 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 8, 9, 10)) == 7
+find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 8, 9, 10)) ?>> 7
 // Assert 8 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 7, 9, 10)) == 8
+find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 7, 9, 10)) ?>> 8
 // Assert 9 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 7, 8, 10)) == 9
+find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 7, 8, 10)) ?>> 9
 
 //: [Next](@next)

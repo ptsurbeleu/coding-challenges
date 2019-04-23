@@ -9,9 +9,9 @@
  
  EXAMPLE
  
- Input: num = 0b101010
+    Input: num = 0b101010
  
- Output: 0b010101
+    Output: 0b010101
  
  */
 

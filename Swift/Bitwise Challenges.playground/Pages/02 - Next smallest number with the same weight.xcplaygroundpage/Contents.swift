@@ -11,10 +11,10 @@
  
  EXAMPLE
  
-    Input: num = 0b11011001111100 (13948)
+    Input: num = 0b11_0110_0111_1100 (13948)
  
-    Output: 0b11011001111010 (13946)
- 
+    Output:      0b11_0110_0111_1010 (13946)
+                                ^^^
  */
 
 func nextSmallest(n: Int) -> Int {
@@ -46,22 +46,24 @@ func nextSmallest(n: Int) -> Int {
 }
 
 // Assert a few very basic use cases
-nextSmallest(n: 0b0010) == 0b0001 // (true)
-nextSmallest(n: 0b0101) == 0b0011 // (true)
-nextSmallest(n: 0b1001) == 0b0110 // (true)
-nextSmallest(n: 0b1000) == 0b0100 // (true)
+nextSmallest(n: 0b0010) ?>> 0b0001
+nextSmallest(n: 0b0101) ?>> 0b0011
+nextSmallest(n: 0b1001) ?>> 0b0110
+nextSmallest(n: 0b1000) ?>> 0b0100
 
 // Assert a few edge use cases
-nextSmallest(n:   0)     == -1 // (true)
-nextSmallest(n:  -1)     == -1 // (true)
-nextSmallest(n: -11)     == -1 // (true)
-nextSmallest(n: Int.min) == -1 // (true)
+nextSmallest(n:   0)     ?>> -1
+nextSmallest(n:   1)     ?>> -1
+nextSmallest(n:   7)     ?>> -1
+nextSmallest(n:  -1)     ?>> -1
+nextSmallest(n: -11)     ?>> -1
+nextSmallest(n: Int.min) ?>> -1
 
 // Assert slightly more involved use cases
-nextSmallest(n: 0b10011110000011) == 0b10011101110000 // (true)
-nextSmallest(n: 0b10011110010011) == 0b10011110001110 // (true)
-nextSmallest(n: 0b10011010000010) == 0b10011010000001 // (true)
-nextSmallest(n: 0b10000000000001) == 0b01100000000000 // (true)
-nextSmallest(n: 0b11011001111100) == 0b11011001111010 // (true)
+nextSmallest(n: 0b10011110000011) ?>> 0b10011101110000
+nextSmallest(n: 0b10011110010011) ?>> 0b10011110001110
+nextSmallest(n: 0b10011010000010) ?>> 0b10011010000001
+nextSmallest(n: 0b10000000000001) ?>> 0b01100000000000
+nextSmallest(n: 0b11011001111100) ?>> 0b11011001111010
 
 //: [Next](@next)

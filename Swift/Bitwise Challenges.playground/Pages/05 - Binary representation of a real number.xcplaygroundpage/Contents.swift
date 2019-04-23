@@ -36,9 +36,9 @@ func toBinary(num: Float32) -> String {
 }
 
 // Assert a few test cases
-toBinary(num: 0.625) == "10100000000000000000000" // true
-toBinary(num: 0.6)   == "10011001100110011001101" // true
-toBinary(num: 0.541) == "10001010011111101111101" // true
-toBinary(num: 0.5)   == "10000000000000000000000" // true
+toBinary(num: 0.625) ?>> "10100000000000000000000"
+toBinary(num: 0.6)   ?>> "10011001100110011001101"
+toBinary(num: 0.541) ?>> "10001010011111101111101"
+toBinary(num: 0.5)   ?>> "10000000000000000000000"
 
 //: [Next](@next)

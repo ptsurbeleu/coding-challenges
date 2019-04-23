@@ -2,13 +2,14 @@ import Foundation
 
 /// Binary integer (aka. BInt) that allows sequential access to its bits
 /// using i-th notation.
-public struct BInt : CustomPlaygroundQuickLookable, CustomStringConvertible {
+public struct BInt : CustomPlaygroundDisplayConvertible, CustomStringConvertible {
+    
     /// Value to store.
     let n: UInt
 
     /// Custom quick look for our own type.
-    public var customPlaygroundQuickLook: PlaygroundQuickLook {
-        get { return PlaygroundQuickLook.uInt(UInt64(n)) }
+    public var playgroundDescription: Any {
+        get { return UInt64(n) }
     }
 
     /// A textual representation of this instance.
