@@ -24,42 +24,43 @@
 
 func flip(x: Int) -> Int {
     // Prepare state of the algorithm
-    var output = 0, xx = x
+    var lhs = 0, rhs = x
     // Iterate while there are digits to work with
-    while xx != 0 {
+    while rhs != 0 {
         // Shift current value to the next decimal place
-        output = output * 10
-        // Extract another digit from the original number
-        output += xx % 10
+        // and calculate the next digit
+        lhs = (lhs * 10) + (rhs % 10)
         // Remove processed digit from the original number
-        xx /= 10
+        rhs /= 10
     }
     // Here is our answer
-    return output
+    return lhs
 }
 
+
 // Assert a few original test cases
-flip(x:   18) ==   81
-flip(x: -991) == -199
+flip(x:   18) ?>>   81
+flip(x: -991) ?>> -199
 
 // Assert a few positive edge cases
-flip(x:    0) ==    0
-flip(x:    1) ==    1
-flip(x:   10) ==   01
-flip(x:  100) ==  001
-flip(x: 1111) == 1111
+flip(x:    0) ?>>    0
+flip(x:    1) ?>>    1
+flip(x:   10) ?>>   01
+flip(x:  100) ?>>  001
+flip(x: 1111) ?>> 1111
 
 // Assert a few negative edge cases
-flip(x:    -0) ==    -0
-flip(x:    -1) ==    -1
-flip(x:   -10) ==   -01
-flip(x:  -100) ==  -001
-flip(x: -1111) == -1111
+flip(x:    -0) ?>>    -0
+flip(x:    -1) ?>>    -1
+flip(x:   -10) ?>>   -01
+flip(x:  -100) ?>>  -001
+flip(x: -1111) ?>> -1111
 
 // Assert a few large numbers edge cases
 // 9223372036854775807 ~> 7085774586302733229
-flip(x: Int.max) == 7085774586302733229
+flip(x: Int.max) ?>> 7085774586302733229
 // -9223372036854775808 ~> -8085774586302733229
-flip(x: Int.min) == -8085774586302733229
+flip(x: Int.min) ?>> -8085774586302733229
+
 
 //: [Next](@next)
