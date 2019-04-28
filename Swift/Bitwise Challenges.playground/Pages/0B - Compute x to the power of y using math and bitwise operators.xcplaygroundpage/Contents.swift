@@ -6,7 +6,7 @@
  
  Write a function that takes a double X and an integer Y and computes X to the power of Y. Keep in mind your code needs to meet the following constraints:
  
-  - use mathematical (+, -, * and etc.) and bitwise operators;
+  - use only mathematical (+, -, * and etc.) and bitwise operators;
  
  
  EXAMPLE:
