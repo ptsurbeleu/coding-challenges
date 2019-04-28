@@ -49,16 +49,16 @@ func position(n: Int, _ lsb: UInt = 0, _ msb: UInt = 63) -> Int {
 
 
 // Assert recursive implementation
-position(n: 0)       ==  0 // true
-position(n: 1)       ==  1 // true
-position(n: 0x40)    ==  7 // true
-position(n: 0x50000) == 17 // true
-position(n: 1 << 27) == 28 // true
-position(n: 1 << 30) == 31 // true
-position(n: 1 << 31) == 32 // true
-position(n: 1 << 32) == 33 // true
-position(n: 1 << 35) == 36 // true
-position(n: 1 << 63) == 64 // true
+position(n: 0)       ?>>  0 // true
+position(n: 1)       ?>>  1 // true
+position(n: 0x40)    ?>>  7 // true
+position(n: 0x50000) ?>> 17 // true
+position(n: 1 << 27) ?>> 28 // true
+position(n: 1 << 30) ?>> 31 // true
+position(n: 1 << 31) ?>> 32 // true
+position(n: 1 << 32) ?>> 33 // true
+position(n: 1 << 35) ?>> 36 // true
+position(n: 1 << 63) ?>> 64 // true
 
 
 //: [Next](@next)
