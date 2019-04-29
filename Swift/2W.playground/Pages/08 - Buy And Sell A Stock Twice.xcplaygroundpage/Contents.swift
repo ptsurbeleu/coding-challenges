@@ -14,9 +14,9 @@ typealias Profit = Double
  
  EXAMPLE:
  
- Input: n = [9,11,5,8,8,8,8,8,25]
+    Input: n = [9,11,5,8,8,8,8,8,25]
  
- Output: 22 // (9/11) and (5,25)
+    Output: 22 // (9/11) and (5,25)
  
  */
 

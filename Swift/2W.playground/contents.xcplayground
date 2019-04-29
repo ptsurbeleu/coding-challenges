@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos' executeOnSourceChanges='false'>
+<playground version='6.0' target-platform='macos'>
     <pages>
         <page name='01 - The Dutch National Flag Sorting'/>
         <page name='02 - Increment an Arbitrary Precision Number'/>
@@ -20,5 +20,7 @@
         <page name='11 - The Sudoku Checker Problem'/>
         <page name='12 - Compute The Spiral Ordering Of A 2D Array'/>
         <page name='13 - Rotate A 2D Array (Data Structure)'/>
+        <page name='13 - Rotate A 2D Array (Function)'/>
+        <page name='14 - Compute Rows In Pascal&apos;s Triangle'/>
     </pages>
 </playground>

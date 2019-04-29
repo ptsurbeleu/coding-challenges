@@ -11,9 +11,9 @@
  
  EXAMPLE:
  
- Input:  s = [1,2,3,4,5], k = 3
+    Input:  s = [1,2,3,4,5], k = 3
  
- Output: s = [3,2,4,0,0]
+    Output: s = [3,2,4,0,0]
  
  */
 
@@ -26,6 +26,7 @@ func sample(s: inout [Int], k: Int) {
     fatalError("TODO: Write some code to solve this challenge...")
 }
 
+sample(p: [1,2,3,4,5], k: 3)
 
 // Prepare state of the test
 var seq = [Int]()

@@ -9,9 +9,10 @@
  
  EXAMPLE:
  
- Input: n = [2,3,3,4,5,5]
+    Input: n = [2,3,3,4,5,5]
  
- Output: [2,3,4,5,0,0]
+    Output: [2,3,4,5,0,0]
+
  */
 
 /// Removes duplicates from a sorted array, compacts remaning elements and fills empty spaces with 0s.

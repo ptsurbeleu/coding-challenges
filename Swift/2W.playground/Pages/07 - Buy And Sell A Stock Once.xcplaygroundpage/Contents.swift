@@ -14,9 +14,9 @@ typealias Profit = Double
  
  EXAMPLE:
  
- Input: n = [20,20,15,15,25]
+    Input: n = [20,20,15,15,25]
  
- Output: 10
+    Output: 10
  
  */
 

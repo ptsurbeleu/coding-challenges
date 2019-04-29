@@ -9,9 +9,9 @@
  
  EXAMPLE:
  
- Input: n = 18
+    Input: n = 18
  
- Output: [2,3,5,7,11,13,17]
+    Output: [2,3,5,7,11,13,17]
  
  */
 
