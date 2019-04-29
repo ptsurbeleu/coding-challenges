@@ -21,5 +21,6 @@
         <page name='12 - Compute The Spiral Ordering Of A 2D Array'/>
         <page name='13 - Rotate A 2D Array (Data Structure)'/>
         <page name='13 - Rotate A 2D Array (Function)'/>
+        <page name='14 - Compute Rows In Pascal&apos;s Triangle'/>
     </pages>
 </playground>
