@@ -27,9 +27,9 @@ func powerof2(n: Int) -> Bool {
 
 
 // Assert original use cases + few more
-powerof2(n: 0b0000_0100) == true  // (true)
-powerof2(n: 0b0000_1000) == true  // (true)
-powerof2(n: 0b0001_0000) == true  // (true)
-powerof2(n: 0b0110_0101) == false // (true)
+powerof2(n: 0b0000_0100) ?>> true
+powerof2(n: 0b0000_1000) ?>> true
+powerof2(n: 0b0001_0000) ?>> true
+powerof2(n: 0b0110_0101) ?>> false
 
 //: [Next](@next)
