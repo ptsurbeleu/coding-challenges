@@ -15,23 +15,23 @@
  
  */
 
+
 func swap(num: UInt) -> UInt {
-    // Query odd and even bits from the number
-
-    // Swap odd and even bits
-
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...")
 }
 
+
 // Assert a few basic cases
-swap(num: 0b000000) == 0b000000
-swap(num: 0b000001) == 0b000010
-swap(num: 0b000011) == 0b000011
-swap(num: 0b000101) == 0b001010
+swap(num: 0b000000) ?>> 0b000000
+swap(num: 0b000001) ?>> 0b000010
+swap(num: 0b000011) ?>> 0b000011
+swap(num: 0b000101) ?>> 0b001010
 
 // Assert original case + a few edge cases
-swap(num: 0b101010) == 0b010101
-swap(num: 0xaaaa_aaaa_aaaa_aaaa) == 0x5555_5555_5555_5555
-swap(num: 0x5555_5555_5555_5555) == 0xaaaa_aaaa_aaaa_aaaa
-swap(num: 0xffff_ffff_ffff_ffff) == 0xffff_ffff_ffff_ffff
+swap(num: 0b101010) ?>> 0b010101
+swap(num: 0xaaaa_aaaa_aaaa_aaaa) ?>> 0x5555_5555_5555_5555
+swap(num: 0x5555_5555_5555_5555) ?>> 0xaaaa_aaaa_aaaa_aaaa
+swap(num: 0xffff_ffff_ffff_ffff) ?>> 0xffff_ffff_ffff_ffff
 
 //: [Next](@next)

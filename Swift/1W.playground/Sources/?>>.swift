@@ -26,7 +26,7 @@ public func ?>><Element : Equatable>(lhs: Element, rhs: Element) -> Icon {
 /// - Parameter lhs: An actual value to compare with.
 /// - Parameter rhs: An expected value to compare with.
 public func ?>><Element : Equatable>(lhs: [Element], rhs: [Element]) -> Icon {
-    // Trivial comparison via Equatable protocol cuts it 
+    // Trivial comparison via Equatable protocol cuts it
     return lhs == rhs ? PASS : FAIL
 }
 

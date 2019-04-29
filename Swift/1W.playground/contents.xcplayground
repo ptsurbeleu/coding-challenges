@@ -16,6 +16,7 @@
         <page name='0D - Find the number that appears once'/>
         <page name='0E - Find if the number is power of 4'/>
         <page name='0F - Find position of the least significant bit (iterative)'/>
+        <page name='0F - Find position of the least significant bit (recursive)'/>
         <page name='10 - Find if two numbers have opposite signs'/>
         <page name='11 - Compute x + 1 using bitwise operators'/>
         <page name='12 - Compute x * 3.5 using bitwise operators'/>

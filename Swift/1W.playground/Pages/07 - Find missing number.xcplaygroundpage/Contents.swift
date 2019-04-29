@@ -24,51 +24,29 @@
 /// - Parameter array: An array of binary integers.
 /// - Parameter position: Current bit position to perform find operation.
 func find(array: [BInt], position: Int = 0) -> UInt {
-    // Empty array is the base case and signal to end recursion
-
-    // Sorting buckets for items with 1 or 0 in the current position
-
-    // Loop thru array of BInts and sort them
-
-        // Query bit of an item in the current position
-
-            // This item goes into 1's bucket...
-
-
-            // and that item goes into 0's bucket
-
-
-
-    // Find out a missing "bit" in the current position
-
-    // Pick a bucket to work with based on the missing "bit"
-
-    // Missing number has "bit" in the current position,
-    // however lets find out other missing "bits" using recursion
-
-    // Shift discovered "bits" by 1 to the left and add the missing one
-
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...")
 }
 
 
 // Assert 1 is missing
-find(array: BInt.from(0, 2, 3, 4, 5, 6, 7, 8, 9, 10)) == 1
+find(array: BInt.from(0, 2, 3, 4, 5, 6, 7, 8, 9, 10)) ?>> 1
 // Assert 2 is missing
-find(array: BInt.from(0, 1, 3, 4, 5, 6, 7, 8, 9, 10)) == 2
+find(array: BInt.from(0, 1, 3, 4, 5, 6, 7, 8, 9, 10)) ?>> 2
 // Assert 3 is missing
-find(array: BInt.from(0, 1, 2, 4, 5, 6, 7, 8, 9, 10)) == 3
+find(array: BInt.from(0, 1, 2, 4, 5, 6, 7, 8, 9, 10)) ?>> 3
 // Assert 4 is missing
-find(array: BInt.from(0, 1, 2, 3, 5, 6, 7, 8, 9, 10)) == 4
+find(array: BInt.from(0, 1, 2, 3, 5, 6, 7, 8, 9, 10)) ?>> 4
 // Assert 5 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 6, 7, 8, 9, 10)) == 5
+find(array: BInt.from(0, 1, 2, 3, 4, 6, 7, 8, 9, 10)) ?>> 5
 // Assert 6 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 5, 7, 8, 9, 10)) == 6
+find(array: BInt.from(0, 1, 2, 3, 4, 5, 7, 8, 9, 10)) ?>> 6
 // Assert 7 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 8, 9, 10)) == 7
+find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 8, 9, 10)) ?>> 7
 // Assert 8 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 7, 9, 10)) == 8
+find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 7, 9, 10)) ?>> 8
 // Assert 9 is missing
-find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 7, 8, 10)) == 9
+find(array: BInt.from(0, 1, 2, 3, 4, 5, 6, 7, 8, 10)) ?>> 9
 
 
 //: [Next](@next)

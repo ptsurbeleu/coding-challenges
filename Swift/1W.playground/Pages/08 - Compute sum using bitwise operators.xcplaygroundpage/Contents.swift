@@ -22,40 +22,31 @@
 /// Computes sum of two signed numbers using bitwise operators only.
 ///
 func sum(x: Int, y: Int) -> Int {
-    // Since function parameters in Swift are constants,
-    // we declare internal variables that we can modify
-
-    // Iterate on y while there are bits to work with
-
-        // Compute carry of x and y, using AND, where
-        // carry is a set of common bits between x and y
-
-        // Compute sum of bits x and y, using XOR, where sum
-        // is a set of bits that are different between x and y
-
-        // Carry is shifted by 1, that is what we usually do
-        // with carry, eq. move to the next position
-
-
-    // Here is our sum
-
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...")
 }
 
+
 // Assert a few basic use cases
-sum(x: 0, y: 0)    ==    0
-sum(x: 0, y: 1)    ==    1
-sum(x: 4, y: 2)    ==    6
-sum(x: 0, y: -1)   ==   -1
-sum(x: 1, y: -1)   ==    0
+sum(x: 0, y: 0) ?>> 0
+sum(x: 0, y: 1) ?>> 1
+sum(x: 4, y: 2) ?>> 6
+
+// Assert a few use cases with negative numbers
+sum(x: 0, y: -1) ?>> -1
+sum(x: 1, y: -1) ?>> 0
 
 // Assert slightly bigger numbers
-sum(x: 100, y: 4)  ==  104
-sum(x: 999, y: 1)  == 1000
-sum(x: 999, y: -1) ==  998
+sum(x: 100, y: 4) ?>>  104
+sum(x: 999, y: 1) ?>> 1000
 
-// Assert a few edge cases
-sum(x: Int.max, y: 1)  == Int.min
-sum(x: Int.min, y: -1) == Int.max
+// Assert slightly bigger numbers and -1
+sum(x: 999, y: -1) ?>> 998
+sum(x: 555, y: -1) ?>> 554
+
+// Assert a few edge cases (eq. arithmetic overflow)
+sum(x: Int.max, y: 1)  ?>> Int.min
+sum(x: Int.min, y: -1) ?>> Int.max
 
 
 //: [Next](@next)

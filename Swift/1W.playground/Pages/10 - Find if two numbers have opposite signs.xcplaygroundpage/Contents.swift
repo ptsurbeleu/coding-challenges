@@ -23,27 +23,25 @@
  */
 
 func opposite(x: Int, y: Int) -> Bool {
-    // Prepare bit mask of the sign bit
-
-    // Compare signs of both numbers using bit mask
-
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...")
 }
 
 
 // Assert original use cases
-opposite(x:  -1, y:   0) == true
-opposite(x: -11, y: -99) == false
+opposite(x:  -1, y:   0) ?>> true
+opposite(x: -11, y: -99) ?>> false
 
 // Assert a few use cases of simple numbers
-opposite(x:  0, y:  0) == false
-opposite(x:  1, y:  1) == false
-opposite(x: -1, y:  0) == true
-opposite(x: -1, y: -1) == false
+opposite(x:  0, y:  0) ?>> false
+opposite(x:  1, y:  1) ?>> false
+opposite(x: -1, y:  0) ?>> true
+opposite(x: -1, y: -1) ?>> false
 
 // Assert a few edge cases of Int's max and min
-opposite(x: Int.min, y: Int.max) == true
-opposite(x: Int.max, y: Int.min) == true
-opposite(x: Int.min, y: Int.min) == false
-opposite(x: Int.max, y: Int.max) == false
+opposite(x: Int.min, y: Int.max) ?>> true
+opposite(x: Int.max, y: Int.min) ?>> true
+opposite(x: Int.min, y: Int.min) ?>> false
+opposite(x: Int.max, y: Int.max) ?>> false
 
 //: [Next](@next)

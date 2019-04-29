@@ -15,33 +15,24 @@
  */
 
 func bitsToConvert(x: UInt, y: UInt) -> Int {
-    // Prepare state
-
-    // Loop thru diff until it runs out of bits
-
-        // Plus one more bit that is different
-
-        // Flip the next least-significant bit
-
-
-    // This is how many bits are required (eq. different) to convert x to y
-
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...")
 }
 
 // Assert a few simple cases
-bitsToConvert(x: 0b0000, y: 0b0000) == 0
-bitsToConvert(x: 0b0001, y: 0b0000) == 1
-bitsToConvert(x: 0b0011, y: 0b0001) == 1
-bitsToConvert(x: 0b0010, y: 0b0001) == 2
+bitsToConvert(x: 0b0000, y: 0b0000) ?>> 0
+bitsToConvert(x: 0b0001, y: 0b0000) ?>> 1
+bitsToConvert(x: 0b0011, y: 0b0001) ?>> 1
+bitsToConvert(x: 0b0010, y: 0b0001) ?>> 2
 
 // Assert original case
-bitsToConvert(x: 0b1000, y: 0b0011) == 3
+bitsToConvert(x: 0b1000, y: 0b0011) ?>> 3
 
 // Assert a few edge cases using hexadecimal notation
-bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0xffff_ffff_ffff_ffff) == 0
-bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0xffff_ffff_ffff_fffe) == 1
-bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0xffff_ffff_ffff_fff0) == 4
-bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0x0000_0000_0000_0000) == 64
-bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0x0000_0000_0000_0001) == 63
+bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0xffff_ffff_ffff_ffff) ?>> 0
+bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0xffff_ffff_ffff_fffe) ?>> 1
+bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0xffff_ffff_ffff_fff0) ?>> 4
+bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0x0000_0000_0000_0000) ?>> 64
+bitsToConvert(x: 0xffff_ffff_ffff_ffff, y: 0x0000_0000_0000_0001) ?>> 63
 
 //: [Next](@next)

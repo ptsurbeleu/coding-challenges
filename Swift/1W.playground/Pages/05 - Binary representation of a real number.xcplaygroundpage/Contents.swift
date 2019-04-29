@@ -16,30 +16,15 @@
  */
 
 func toBinary(num: Float32) -> String {
-    // Prepare our state and define precision
-
-    // Loop thru the number's bits and keep precision in check
-
-        // Assemble the binary representation with 2x trick
-
-        // Do we have leading bit set to 1?
-
-        // This is how our trick translates into 0s and 1s
-
-        // Leave out already processed bit
-
-        // Move on to the next bit
-
-
-    // Here is the binary representation
-
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...") 
 }
 
 
 // Assert a few test cases
-toBinary(num: 0.625) == "10100000000000000000000" // true
-toBinary(num: 0.6)   == "10011001100110011001101" // true
-toBinary(num: 0.541) == "10001010011111101111101" // true
-toBinary(num: 0.5)   == "10000000000000000000000" // true
+toBinary(num: 0.625) ?>> "10100000000000000000000"
+toBinary(num: 0.6)   ?>> "10011001100110011001101"
+toBinary(num: 0.541) ?>> "10001010011111101111101"
+toBinary(num: 0.5)   ?>> "10000000000000000000000"
 
 //: [Next](@next)
