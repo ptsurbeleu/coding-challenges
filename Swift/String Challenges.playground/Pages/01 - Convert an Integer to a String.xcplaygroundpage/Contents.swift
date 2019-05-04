@@ -34,7 +34,7 @@ func itos(n: Int) -> String {
     // Enumerate each & every digit in the number
     repeat {
         // Find out absolute value, since ASCII uses positive numbers only
-        let digit = abs(num % 10), uint8 = UInt8(exactly: digit)!
+        let digit = abs(num % 10), uint8 = UInt8(digit)
         // Find out the actual character by adding 48 (0s code) to the value
         let char = Character(ascii: uint8 + 48)
         // Insert new character into the beginning of the string (eq. RTL conversion)
