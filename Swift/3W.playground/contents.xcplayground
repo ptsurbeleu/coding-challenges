@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos' display-mode='rendered'>
+<playground version='6.0' target-platform='macos' display-mode='raw'>
     <pages>
         <page name='01 - Convert a String to an Integer'/>
         <page name='01 - Convert an Integer to a String'/>
         <page name='02 - Base Conversion'/>
+        <page name='03 - Spreadsheet Column Encoding (A is 1)'/>
+        <page name='03 - Spreadsheet Column Encoding (A is 0)'/>
     </pages>
 </playground>
