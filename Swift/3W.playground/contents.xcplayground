@@ -6,5 +6,6 @@
         <page name='02 - Base Conversion'/>
         <page name='03 - Spreadsheet Column Encoding (A is 1)'/>
         <page name='03 - Spreadsheet Column Encoding (A is 0)'/>
+        <page name='04 - Replace A&apos;s and Remove B&apos;s'/>
     </pages>
 </playground>
