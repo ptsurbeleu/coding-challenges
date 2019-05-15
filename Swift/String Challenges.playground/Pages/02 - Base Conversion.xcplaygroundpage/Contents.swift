@@ -1,6 +1,6 @@
 //: [`Previous`](@previous)
 /*:
- ## 02 - Base Conversion
+ ## Base Conversion
  
  In the decimal number system, the position of a digit is used to signify the power of `10` that digit is to be multiplied with. For example, `314` denotes the number `3 * 100 + 1 * 10 + 4 * 1`.
  
@@ -75,7 +75,7 @@ func convert(s: String, from: Int, to: Int) -> String? {
     var strout = ""
     // Convert from base10 to desired base
     repeat {
-        // Extrace next number in the desired base and parse into the hexadecimal char
+        // Extract next number in the desired base and convert into the hexadecimal char
         let rmndr = base10 % to, char = hex(n: rmndr)
         // Prepend hexadecimal character to the output string
         strout.prepend(char)

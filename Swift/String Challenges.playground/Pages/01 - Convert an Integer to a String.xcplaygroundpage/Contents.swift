@@ -1,7 +1,7 @@
 //: [`Previous`](@previous)
 /*:
  
- ## 01 - Convert an Integer to a String
+ ## Convert an Integer to a String
  
  A string is a sequence of characters. A string may encode and integer, e.q. "123" encodes 123. In this problem, you are to implement a method that takes an integer and returns the string with its digits. Your code should handle negative integers. You cannot use functions from the standard library.
  

@@ -20,7 +20,8 @@
 ///
 func decode(s: String) -> UInt {
     // IDEA: Find out distance between lhs and rhs
-    return 0
+    // TODO: Write some code to solve this coding challenge
+    fatalError("TODO: Write some code to solve this challenge...")
 }
 
 

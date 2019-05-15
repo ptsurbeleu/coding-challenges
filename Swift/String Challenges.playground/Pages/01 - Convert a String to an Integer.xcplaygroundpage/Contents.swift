@@ -1,6 +1,6 @@
 /*:
  
- ## 01 - Convert a String to an Integer
+ ## Convert a String to an Integer
  
  A string is a sequence of characters. A string may encode and integer, e.q. "123" encodes 123. In this problem, you are to implement a method that takes a string representing an integer and returns the corresponding integer. Your code should handle negative integers. You cannot use functions from the standard library.
  
