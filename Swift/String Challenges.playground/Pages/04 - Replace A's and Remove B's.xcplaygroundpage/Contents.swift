@@ -25,33 +25,36 @@ func process(s: [Character], n: Int) -> [Character] {
     // Safe-guard from empty or invalid input
     if s.count == 0 || 0 >= n || n > s.count { return [] }
     // Prepare state of the algorithm
-    var ss = s, ac = 0, wx = 0
+    var ss = s, ac = 0, write = 0
     // Enumerate forward: remove 'b' and count 'a' 
-    for i in 0..<n {
+    for read in 0..<n {
         // Should discard 'b' character
-        if ss[i] != "b" { ss[wx] = ss[i]; wx += 1 }
+        if ss[read] != "b" {
+            ss[write] = ss[read]
+            write += 1
+        }
         // Count 'a' for the next phase
-        if ss[i] == "a" { ac += 1  }
+        if ss[read] == "a" { ac += 1  }
     }
     // Evaluate the next loop's boundaries
-    var rhs = wx - 1, lhs = wx + ac - 1
+    var read = write - 1; write += ac - 1
     // Pin it as End-Of-Sequence constant
-    let eos = lhs
+    let end = write
     // Enumerate backward: take care of 'a' characters
-    while rhs >= 0 {
+    while read >= 0 {
         // Replace it with 'd' x2
-        if ss[rhs] == "a" {
-            ss[lhs] = "d"; lhs -= 1;
-            ss[lhs] = "d"
+        if ss[read] == "a" {
+            ss[write] = "d"; write -= 1;
+            ss[write] = "d"
         } else {
             // Simply copy value between positions
-            ss[lhs] = ss[rhs]
+            ss[write] = ss[read]
         }
         // Move on to the next pair to inspect & process
-        lhs -= 1; rhs -= 1
+        write -= 1; read -= 1
     }
     // Given the End-Of-Sequence, filter out the rest of the data
-    return [Character](ss[0...eos])
+    return [Character](ss[0...end])
 }
 //: Assertions for a few very basic use cases
 process(s: ["a","-"], n: 1)     ?>> ["d","d"]
