@@ -30,11 +30,10 @@ func process(s: [Character], n: Int) -> [Character] {
     for read in 0..<n {
         // Should discard 'b' character
         if ss[read] != "b" {
-            ss[write] = ss[read]
-            write += 1
+            ss[write++] = ss[read]
         }
         // Count 'a' for the next phase
-        if ss[read] == "a" { ac += 1  }
+        if ss[read] == "a" { ac++ }
     }
     // Evaluate the next loop's boundaries
     var read = write - 1; write += ac - 1
@@ -44,14 +43,14 @@ func process(s: [Character], n: Int) -> [Character] {
     while read >= 0 {
         // Replace it with 'd' x2
         if ss[read] == "a" {
-            ss[write] = "d"; write -= 1;
+            ss[write--] = "d"
             ss[write] = "d"
         } else {
             // Simply copy value between positions
             ss[write] = ss[read]
         }
         // Move on to the next pair to inspect & process
-        write -= 1; read -= 1
+        write--; read--
     }
     // Given the End-Of-Sequence, filter out the rest of the data
     return [Character](ss[0...end])
