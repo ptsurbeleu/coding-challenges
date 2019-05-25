@@ -9,5 +9,6 @@
         <page name='04 - Replace A&apos;s and Remove B&apos;s'/>
         <page name='05 - Test Palindromicity'/>
         <page name='06 - Reverse All the Words in a Sentence'/>
+        <page name='07 - Compute All Mnemonics for a Phone Number'/>
     </pages>
 </playground>

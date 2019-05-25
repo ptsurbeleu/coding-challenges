@@ -1,14 +1,16 @@
 //: [`Previous`](@previous)
 /*:
+ ## Reverse All the Words in a Sentence
+ 
  Given a string containing a set of words separated by whitespace, we would like to transform it to a string in which the words appear in the reverse order. For example, `Alice likes Bob` transforms to `Bob likes Alice`. We do not need to keep the original string.
  
  Implement a function to reverse words in a string `s`.
  
  _HINT: It's easier to solve this using more than one pass._
  
- Input: "Alice likes Bob"
+    Input: "Alice likes Bob"
  
- Output: "Bob likes Alice"
+    Output: "Bob likes Alice"
  
  */
 /// Reverse words in the specified string.
