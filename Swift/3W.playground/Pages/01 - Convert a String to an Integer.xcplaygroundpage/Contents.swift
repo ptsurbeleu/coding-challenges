@@ -27,14 +27,6 @@ _1.asciiValue ?>> 49
 /*:
  Find below the code that implements `stoi` function to convert a `string` to an `integer`.
  */
-
-/// "Sniff" a string and return a tuple with the string itself alongside with a flag indicating whether it represents a positive or negative number.  
-///
-func sniff(s: String) -> (str: String, negative: Bool) {
-    // TODO: Write some code to solve this coding challenge
-    fatalError("TODO: Write some code to solve this challenge...")
-}
-
 /// Converts a string to an integer.
 ///
 func stoi(s: String) -> Int {

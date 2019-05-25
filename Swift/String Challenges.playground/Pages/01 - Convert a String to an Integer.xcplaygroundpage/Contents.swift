@@ -27,17 +27,6 @@ _1.asciiValue ?>> 49
 /*:
  Find below the code that implements two functions `stoi` and `itos` to convert `string` to an `integer` and vice versa.
  */
-
-/// "Sniff" a string and return a tuple with the string itself alongside with a flag indicating whether it represents a positive or negative number.  
-///
-func sniff(s: String) -> (str: String, negative: Bool) {
-    let lhs = s.startIndex, rhs = s.index(after: lhs)
-    if s[lhs] == "-" {
-        return (String(s[rhs..<s.endIndex]), true)
-    }
-    return (s, false)
-}
-
 /// Converts a string to an integer.
 ///
 func stoi(s: String) -> Int {

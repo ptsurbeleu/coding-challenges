@@ -29,7 +29,7 @@ func skip(c: Character) -> Bool {
 ///
 func test(s: String) -> Bool {
     // Prepare read-only cursors to use for the test
-    var lhs = s.startIndex, rhs = s.index(before: s.endIndex)
+    var lhs = s.start(), rhs = s.index(before: s.end())
     // Enumerate until both cursors cross
     while rhs > lhs {
         // Skip non-alphanumeric on the left

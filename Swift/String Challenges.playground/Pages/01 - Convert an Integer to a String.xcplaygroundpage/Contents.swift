@@ -30,7 +30,7 @@ ascii_1 ?>> "1"
 ///
 func itos(n: Int) -> String {
     // Get ready storage for the algorithm
-    var bits = "", num = n
+    var strout = "", num = n
     // Enumerate each & every digit in the number
     repeat {
         // Find out absolute value, since ASCII uses positive numbers only
@@ -38,16 +38,14 @@ func itos(n: Int) -> String {
         // Find out the actual character by adding 48 (0s code) to the value
         let char = Character(ascii: uint8 + 48)
         // Insert new character into the beginning of the string (eq. RTL conversion)
-        bits.insert(char, at: bits.startIndex)
+        strout.prepend(char)
         // Shift number to the left to work on the next digit
         num /= 10
     } while num != 0
     // Insert '-' sign for a negative number
-    if n < 0 {
-        bits.insert("-", at: bits.startIndex)
-    }
+    if n < 0 { strout.prepend("-") }
     // Send back string representation of the number
-    return bits
+    return strout
 }
 //: Assertions for positive number use cases, nothing fancy or complicated just simple numbers.
 itos(n:   1) ?>> "1"

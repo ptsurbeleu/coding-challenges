@@ -14,13 +14,6 @@
     Output: "1A7"
  
  */
-/// "Sniff" a string and return a tuple with the string itself alongside with a flag indicating whether it represents a positive or negative number.  
-///
-func sniff(s: String) -> (str: String, negative: Bool) {
-    // TODO: Write some code to solve this coding challenge
-    fatalError("TODO: Write some code to solve this challenge...")
-}
-
 /// Converts a hexadecimal character into a number.
 ///
 func hex(c: Character) -> Int {
